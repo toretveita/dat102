@@ -1,8 +1,8 @@
 package no.hv.dat102;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+
 //Eks modifisert fra Mughals bok Java som første programmeringsspråk 
 public class ListeKlient {
 	static final String SENSUR = "SLADDET";
