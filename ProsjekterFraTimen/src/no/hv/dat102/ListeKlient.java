@@ -12,7 +12,7 @@ public class ListeKlient {
 		
 				         
 		// List<String> ordliste = new ArrayList<String>();
-		//Forenklet uten String i konstruktør    
+		//Forenklet uten String som type i konstruktør    
 		List<String> ordliste = new LinkedList<>();
 		for (int i = 0; i < ord.length; i++) {
 			ordliste.add(ord[i]);
