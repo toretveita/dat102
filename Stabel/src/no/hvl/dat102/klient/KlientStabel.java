@@ -17,7 +17,7 @@ public class KlientStabel {
 		System.out.println(str);
 		try {
 			while (!tegnStabel.erTom()) {
-				Character tegn = tegnStabel.pop();
+				char tegn = tegnStabel.pop();
 				System.out.print(tegn);
 			}
 			System.out.println();
