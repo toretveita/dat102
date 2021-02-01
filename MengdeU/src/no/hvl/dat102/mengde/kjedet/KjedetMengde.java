@@ -97,11 +97,27 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 	}
 
 	@Override
-	public boolean equals(Object m2) {
-		boolean likeMengder = true;
-		T element = null;
-		// ...Fyll ut
-		return likeMengder;
+	public boolean equals(Object ny) {
+		if (this == ny) {
+			return true;
+		} else if (ny == null) {
+			return false;
+
+		} else if (getClass() != ny.getClass()) {
+			return false;
+		} else {
+			boolean likeMengder = true;
+			MengdeADT<T> m2 = (KjedetMengde<T>)ny;
+			if (this.antall != m2.antall()) {
+				likeMengder = false;
+			}else {
+				likeMengder = true;
+				//...
+			return likeMengder;
+			}
+		}
+		return false;
+		
 	}
 
 	@Override
