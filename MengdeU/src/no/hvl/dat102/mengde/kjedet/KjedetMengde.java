@@ -100,24 +100,25 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 	public boolean equals(Object ny) {
 		if (this == ny) {
 			return true;
-		} else if (ny == null) {
+		}
+		if (ny == null) {
 			return false;
-
-		} else if (getClass() != ny.getClass()) {
+		}
+		if (getClass() != ny.getClass()) {
 			return false;
 		} else {
 			boolean likeMengder = true;
-			MengdeADT<T> m2 = (KjedetMengde<T>)ny;
+			MengdeADT<T> m2 = (KjedetMengde<T>) ny;
 			if (this.antall != m2.antall()) {
 				likeMengder = false;
-			}else {
+			} else {
 				likeMengder = true;
-				//...
-			return likeMengder;
+				// ...
+				return likeMengder;
 			}
 		}
 		return false;
-		
+
 	}
 
 	@Override
@@ -149,8 +150,7 @@ public class KjedetMengde<T> implements MengdeADT<T> {
 		/*
 		 * Fyll ut...
 		 * 
-		 * if (this.inneholder(element))
-		 *         ((KjedetMengde<T>) snittM).settInn(element);
+		 * if (this.inneholder(element)) ((KjedetMengde<T>) snittM).settInn(element);
 		 */
 		return snittM;
 	}
