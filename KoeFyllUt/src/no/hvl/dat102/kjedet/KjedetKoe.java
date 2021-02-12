@@ -18,7 +18,7 @@ public class KjedetKoe<T> implements KoeADT<T> {
 	public KjedetKoe() {
 		antall = 0;
 		foran = bak = null;
-	}
+		}
 
 	/******************************************************************
 	 * Legger inn et spesifisert element i køen.
@@ -27,6 +27,7 @@ public class KjedetKoe<T> implements KoeADT<T> {
 		LinearNode<T> nyNode = new LinearNode<T>(element);
 
 		//TODO
+		bak = nyNode;
 	}
 
 	/******************************************************************
@@ -37,7 +38,9 @@ public class KjedetKoe<T> implements KoeADT<T> {
 			throw new EmptyCollectionException("koe");
 
 		//TODO
-		return null;
+		T resultat = foran.getElement();
+		foran = bak;
+		return resultat;
 		
 	}
 
@@ -49,7 +52,8 @@ public class KjedetKoe<T> implements KoeADT<T> {
 			throw new EmptyCollectionException("koe");
 
 		//TODO
-		return null;
+		T resultat = foran.getElement();
+		return resultat;
 		
 	}
 

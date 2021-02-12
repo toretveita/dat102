@@ -29,6 +29,7 @@ public class SirkulaerKoe<T> implements KoeADT<T> {
 			utvid();
 
 		//TODO
+		koe[bak] = element;
 		
 	}
 
@@ -37,7 +38,7 @@ public class SirkulaerKoe<T> implements KoeADT<T> {
 			throw new EmptyCollectionException("koe");
 
 	  //TODO
-		return null;
+		return koe[foran];
 	}
 
 	public T foerste()  {
